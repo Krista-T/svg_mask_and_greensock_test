@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+    </head>
+    <div class="main">
+      <svg viewbox="0 0 630 352" xmlns="http://www.w3.org/2000/svg">
+        <mask id="m">
+          <image
+            class="m"
+            href="mask.svg"
+            y="-380"
+            x="-350"
+            width="1200"
+            height="1200"
+          />
+        </mask>
+        <mask id="m1">
+          <image
+            class="m1"
+            href="mask2.svg"
+            y="-550"
+            x="-580"
+            width="1200"
+            height="1200"
+          />
+        </mask>
+        <g mask="url(#m1)">
+          <image class="fox" href="fox.jpg" />
+        </g>
+        <g mask="url(#m)">
+          <image class="fox2" href="mask.jpg" />
+        </g>
+      </svg>
+    </div>
+    <!-- images from unsplash
+    svg from freevector -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
